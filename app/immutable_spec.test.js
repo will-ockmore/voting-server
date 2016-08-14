@@ -43,7 +43,7 @@ describe('immutability', () => {
  });
 
 
- describe('a tree', () => {
+ describe('A tree', () => {
 
    function addMovie(currentState, movie) {
      return currentState.set(
