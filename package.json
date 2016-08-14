@@ -8,7 +8,9 @@
     "mocha": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register --recursive --require ./scripts/test_helper.js 'app/**/*.test.js'"
   },
   "babel": {
-  "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,7 @@
     "mocha": "^3.0.2"
   },
   "dependencies": {
-    "immutable": "^3.8.1"
+    "immutable": "^3.8.1",
+    "redux": "^3.5.2"
   }
 }
