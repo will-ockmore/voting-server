@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run mocha",
+    "mocha": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register --recursive --require ./scripts/test_helper.js"
+  },
+  "babel": {
+  "presets": ["es2015"]
   },
   "keywords": [],
   "author": "",
