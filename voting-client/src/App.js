@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>BLAH</h1>
-        <Voting pair={pair} />
+        <Voting pair={pair} hasVoted="Trainspotting" winner="Trainspotting"/>
       </div>
     );
   }
