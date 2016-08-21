@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
-import Voting from './components/Voting';
+import { List } from 'immutable';
 
-const pair = ['Trainspotting', '28 Days Later'];
+const pair = List.of('Trainspotting', '28 Days Later');
 
-class App extends Component {
+export default class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <h1>BLAH</h1>
-        <Voting pair={pair} hasVoted="Trainspotting" winner="Trainspotting"/>
-      </div>
-    );
+    return React.cloneElement(this.props.children, {pair: pair});
   }
 }
-
-export default App;
