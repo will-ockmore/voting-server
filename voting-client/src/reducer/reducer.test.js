@@ -9,14 +9,14 @@ describe('reducer', () => {
     const initialState = Map();
     const action = {
       type: 'SET_STATE',
-      payload: fromJS({
-        state: {
+      payload: {
+        state: fromJS({
           vote: {
             pair: ['Trainspotting', '28 Days Later'],
             tally: {Trainspotting: 1}
           }
-        }
-      })
+        })
+      }
     };
     const nextState = reducer(initialState, action);
 

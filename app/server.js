@@ -1,4 +1,5 @@
 import Server from 'socket.io';
+import {store} from './index';
 
 export default function startServer() {
   const io = new Server().attach(8090);
